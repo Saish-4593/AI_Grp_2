@@ -1,0 +1,297 @@
+parsing...
+contains quantified condition(s): false
+instantiating...
+trivial rules: converted to facts.
+starting instantiation [39 rules]...
+finding invariants...
+finding invariants... 15 initial candidates
+[0.010s cpu, 0.004s wall-clock]
+checking invariant weight... [0.000s cpu, 0.000s wall-clock]
+instantiating groups...
+choosing groups...
+75 uncovered facts (before using the results from the invariant synthesis)
+5 uncovered facts
+building translation key...
+building strips to sas dictionary...
+translating task...
+processing axioms...
+found 0 axioms that are always true and 0 that are always false
+constrained 419 conditions
+writing output...
+done!
+contains_quantified_conditions: 0
+building causal graph...
+the causal graph is not acyclic.
+16 variables of 16 necessary
+210 of 210 operators necessary.
+0 of 0 axiom_relational rules necessary.
+0 of 0 axiom_functional rules necessary.
+building domain transition graphs...
+solveable in poly time 0
+building successor generator...
+all_operator_indices.size(): 210
+writing output...
+printing sg 
+16
+done
+
+
+planner paramters:
+anytime search: disabled
+timeout if plan was found: 0 seconds (no timeout)
+timeout while no plan was found: 0 seconds (no timeout)
+greedy search: disabled
+verbose: enabled
+lazy heuristic evaluation: enabled
+use caching in heuristic.
+cyclic cg heuristic: enabled 	preferred operators: enabled
+makespan heuristic: disabled 	preferred operators: disabled
+no heuristic: disabled
+cg heuristic zero cost waiting transitions: enabled
+cg heuristic fire waiting transitions only if local problems matches state: disabled
+prefopsorderedmode: enabled with 1 goals
+prefopscheapestmode: enabled with 1 goals
+prefopsmostexpensivemode: disabled with 1000 goals
+prefopsrandmode: disabled with 1000 goals
+prefopsconcurrentmode: disabled
+reset after solution was found: enabled
+reward only preferred operators queue: disabled
+gvalues by: timestamp
+queue management mode: priority based
+known by logical state only filtering: disabled
+use_subgoals_to_break_makespan_ties: disabled
+reschedule plans: enabled
+epsilonize internally: enabled
+epsilonize externally: disabled
+keep original plans: enabled
+plan name: "./output_plan"
+plan monitor file: "" (no monitoring)
+monitoring verify timestamps: disabled
+
+contains universal conditions: 0
+giving prior boost to open list 0
+init
+open list sizes (priorities): 0 (-5000),  0 (0),  0 (0),  0 (0), 
+initializing cyclic causal graph heuristic...done.
+best heuristic values of queues: 133/-1/-1/-1 [expanded 1 state(s)]
+best heuristic values of queues: 84.98/-1/-1/-1 [expanded 2 state(s)]
+best heuristic values of queues: 79.98/-1/-1/-1 [expanded 10 state(s)]
+best heuristic values of queues: 75.98/-1/-1/-1 [expanded 12 state(s)]
+best heuristic values of queues: 72.98/-1/-1/-1 [expanded 22 state(s)]
+best heuristic values of queues: 70.98/-1/-1/-1 [expanded 24 state(s)]
+best heuristic values of queues: 68.98/-1/-1/-1 [expanded 32 state(s)]
+best heuristic values of queues: 64.98/-1/-1/-1 [expanded 34 state(s)]
+best heuristic values of queues: 55.98/-1/-1/-1 [expanded 40 state(s)]
+best heuristic values of queues: 49.98/-1/-1/-1 [expanded 44 state(s)]
+best heuristic values of queues: 45.98/-1/-1/-1 [expanded 46 state(s)]
+best heuristic values of queues: 44.98/-1/-1/-1 [expanded 60 state(s)]
+best heuristic values of queues: 40.98/-1/-1/-1 [expanded 62 state(s)]
+best heuristic values of queues: 36.98/-1/-1/-1 [expanded 64 state(s)]
+best heuristic values of queues: 32.98/-1/-1/-1 [expanded 80 state(s)]
+best heuristic values of queues: 28.98/-1/-1/-1 [expanded 82 state(s)]
+best heuristic values of queues: 24.98/-1/-1/-1 [expanded 84 state(s)]
+best heuristic values of queues: 23.98/-1/-1/-1 [expanded 96 state(s)]
+best heuristic values of queues: 19.98/-1/-1/-1 [expanded 98 state(s)]
+best heuristic values of queues: 15.98/-1/-1/-1 [expanded 100 state(s)]
+best heuristic values of queues: 14/-1/-1/-1 [expanded 115 state(s)]
+best heuristic values of queues: 11.98/-1/-1/-1 [expanded 116 state(s)]
+best heuristic values of queues: 10/-1/-1/-1 [expanded 117 state(s)]
+best heuristic values of queues: 7.98/-1/-1/-1 [expanded 118 state(s)]
+best heuristic values of queues: 6/-1/-1/-1 [expanded 119 state(s)]
+best heuristic values of queues: 3.98/-1/-1/-1 [expanded 120 state(s)]
+best heuristic values of queues: 2/-1/-1/-1 [expanded 121 state(s)]
+best heuristic values of queues: 1.88/-1/-1/-1 [expanded 122 state(s)]
+best heuristic values of queues: 0/-1/-1/-1 [expanded 123 state(s)]
+new solution has been found.
+
+found new plan:
+0.00000000: (move base sitea) [2.00000000]
+2.01000000: (collect-soft rock1 sitea bay1) [2.00000000]
+4.02000000: (move sitea base) [2.00000000]
+6.03000000: (deposit rock1 bay1 base) [1.00000000]
+7.04000000: (move base sitea) [2.00000000]
+9.05000000: (move sitea sitec) [2.00000000]
+11.06000000: (move sitec sited) [2.00000000]
+13.07000000: (move sited siteb) [2.00000000]
+15.08000000: (collect-soft rock2 siteb bay2) [2.00000000]
+17.09000000: (move siteb sited) [2.00000000]
+19.10000000: (move sited sitee) [2.00000000]
+21.11000000: (move sitee sitec) [2.00000000]
+23.12000000: (move sitec sitea) [2.00000000]
+25.13000000: (move sitea base) [2.00000000]
+27.14000000: (deposit rock2 bay2 base) [1.00000000]
+28.15000000: (move base sitea) [2.00000000]
+30.16000000: (move sitea sitec) [2.00000000]
+32.17000000: (move sitec sitee) [2.00000000]
+34.18000000: (pick-drill drill1 sitee) [1.00000000]
+35.19000000: (move sitee sitec) [2.00000000]
+37.20000000: (collect-hard rock3 sitec bay2) [3.00000000]
+40.21000000: (move sitec sitea) [2.00000000]
+42.22000000: (move sitea base) [2.00000000]
+44.23000000: (deposit rock3 bay2 base) [1.00000000]
+45.24000000: (move base sitea) [2.00000000]
+47.25000000: (move sitea sitec) [2.00000000]
+49.26000000: (move sitec sited) [2.00000000]
+51.27000000: (collect-soft rock4 sited bay1) [2.00000000]
+53.28000000: (move sited sitee) [2.00000000]
+55.29000000: (move sitee sitec) [2.00000000]
+57.30000000: (move sitec sitea) [2.00000000]
+59.31000000: (move sitea base) [2.00000000]
+61.32000000: (deposit rock4 bay1 base) [1.00000000]
+62.33000000: (move base sitea) [2.00000000]
+64.34000000: (move sitea sitec) [2.00000000]
+66.35000000: (move sitec sitee) [2.00000000]
+68.36000000: (move sitee sitef) [2.00000000]
+70.37000000: (collect-hard rock5 sitef bay1) [3.00000000]
+73.38000000: (move sitef sitee) [2.00000000]
+75.39000000: (move sitee sitec) [2.00000000]
+77.40000000: (move sitec sitea) [2.00000000]
+79.41000000: (move sitea base) [2.00000000]
+81.42000000: (deposit rock5 bay1 base) [1.00000000]
+82.43000000: (move base sitea) [2.00000000]
+84.44000000: (move sitea sitec) [2.00000000]
+86.45000000: (move sitec sitee) [2.00000000]
+88.46000000: (collect-soft rock6 sitee bay1) [2.00000000]
+90.47000000: (move sitee sitec) [2.00000000]
+92.48000000: (move sitec sitea) [2.00000000]
+94.49000000: (move sitea base) [2.00000000]
+96.50000000: (deposit rock6 bay1 base) [1.00000000]
+97.51000000: (move base sitea) [2.00000000]
+99.52000000: (move sitea sitec) [2.00000000]
+101.53000000: (move sitec sitee) [2.00000000]
+103.54000000: (move sitee sitef) [2.00000000]
+105.55000000: (collect-hard rock7 sitef bay1) [3.00000000]
+108.56000000: (move sitef sitee) [2.00000000]
+110.57000000: (move sitee sitec) [2.00000000]
+112.58000000: (move sitec sitea) [2.00000000]
+114.59000000: (move sitea base) [2.00000000]
+116.60000000: (deposit rock7 bay1 base) [1.00000000]
+rescheduled plan:
+0.00100000: (move base sitea) [2.00000000]
+2.01100000: (collect-soft rock1 sitea bay1) [2.00000000]
+4.02100000: (move sitea base) [2.00000000]
+6.03100000: (deposit rock1 bay1 base) [1.00000000]
+7.04100000: (move base sitea) [2.00000000]
+9.05100000: (move sitea sitec) [2.00000000]
+11.06100000: (move sitec sited) [2.00000000]
+13.07100000: (move sited siteb) [2.00000000]
+15.08100000: (collect-soft rock2 siteb bay2) [2.00000000]
+17.09100000: (move siteb sited) [2.00000000]
+19.10100000: (move sited sitee) [2.00000000]
+21.11100000: (move sitee sitec) [2.00000000]
+23.12100000: (move sitec sitea) [2.00000000]
+25.13100000: (move sitea base) [2.00000000]
+27.14100000: (deposit rock2 bay2 base) [1.00000000]
+28.15100000: (move base sitea) [2.00000000]
+30.16100000: (move sitea sitec) [2.00000000]
+32.17100000: (move sitec sitee) [2.00000000]
+34.18100000: (pick-drill drill1 sitee) [1.00000000]
+35.19100000: (move sitee sitec) [2.00000000]
+37.20100000: (collect-hard rock3 sitec bay2) [3.00000000]
+40.21100000: (move sitec sitea) [2.00000000]
+42.22100000: (move sitea base) [2.00000000]
+44.23100000: (deposit rock3 bay2 base) [1.00000000]
+45.24100000: (move base sitea) [2.00000000]
+47.25100000: (move sitea sitec) [2.00000000]
+49.26100000: (move sitec sited) [2.00000000]
+51.27100000: (collect-soft rock4 sited bay1) [2.00000000]
+53.28100000: (move sited sitee) [2.00000000]
+55.29100000: (move sitee sitec) [2.00000000]
+57.30100000: (move sitec sitea) [2.00000000]
+59.31100000: (move sitea base) [2.00000000]
+61.32100000: (deposit rock4 bay1 base) [1.00000000]
+62.33100000: (move base sitea) [2.00000000]
+64.34100000: (move sitea sitec) [2.00000000]
+66.35100000: (move sitec sitee) [2.00000000]
+68.36100000: (move sitee sitef) [2.00000000]
+70.37100000: (collect-hard rock5 sitef bay1) [3.00000000]
+73.38100000: (move sitef sitee) [2.00000000]
+75.39100000: (move sitee sitec) [2.00000000]
+77.40100000: (move sitec sitea) [2.00000000]
+79.41100000: (move sitea base) [2.00000000]
+81.42100000: (deposit rock5 bay1 base) [1.00000000]
+82.43100000: (move base sitea) [2.00000000]
+84.44100000: (move sitea sitec) [2.00000000]
+86.45100000: (move sitec sitee) [2.00000000]
+88.46100000: (collect-soft rock6 sitee bay1) [2.00000000]
+90.47100000: (move sitee sitec) [2.00000000]
+92.48100000: (move sitec sitea) [2.00000000]
+94.49100000: (move sitea base) [2.00000000]
+96.50100000: (deposit rock6 bay1 base) [1.00000000]
+97.51100000: (move base sitea) [2.00000000]
+99.52100000: (move sitea sitec) [2.00000000]
+101.53100000: (move sitec sitee) [2.00000000]
+103.54100000: (move sitee sitef) [2.00000000]
+105.55100000: (collect-hard rock7 sitef bay1) [3.00000000]
+108.56100000: (move sitef sitee) [2.00000000]
+110.57100000: (move sitee sitec) [2.00000000]
+112.58100000: (move sitec sitea) [2.00000000]
+114.59100000: (move sitea base) [2.00000000]
+116.60100000: (deposit rock7 bay1 base) [1.00000000]
+solution with original makespan 117.6 found (ignoring no-moving-targets-rule).
+plan length: 61 step(s).
+makespan   : 117.601
+rescheduled makespan   : 117.601
+search time: 0 seconds - walltime: 0.00464416 seconds
+total time: 0 seconds - walltime: 0.00788307 seconds
+0.00100000: (move base sitea) [2.00000000]
+2.01100000: (collect-soft rock1 sitea bay1) [2.00000000]
+4.02100000: (move sitea base) [2.00000000]
+6.03100000: (deposit rock1 bay1 base) [1.00000000]
+7.04100000: (move base sitea) [2.00000000]
+9.05100000: (move sitea sitec) [2.00000000]
+11.06100000: (move sitec sited) [2.00000000]
+13.07100000: (move sited siteb) [2.00000000]
+15.08100000: (collect-soft rock2 siteb bay2) [2.00000000]
+17.09100000: (move siteb sited) [2.00000000]
+19.10100000: (move sited sitee) [2.00000000]
+21.11100000: (move sitee sitec) [2.00000000]
+23.12100000: (move sitec sitea) [2.00000000]
+25.13100000: (move sitea base) [2.00000000]
+27.14100000: (deposit rock2 bay2 base) [1.00000000]
+28.15100000: (move base sitea) [2.00000000]
+30.16100000: (move sitea sitec) [2.00000000]
+32.17100000: (move sitec sitee) [2.00000000]
+34.18100000: (pick-drill drill1 sitee) [1.00000000]
+35.19100000: (move sitee sitec) [2.00000000]
+37.20100000: (collect-hard rock3 sitec bay2) [3.00000000]
+40.21100000: (move sitec sitea) [2.00000000]
+42.22100000: (move sitea base) [2.00000000]
+44.23100000: (deposit rock3 bay2 base) [1.00000000]
+45.24100000: (move base sitea) [2.00000000]
+47.25100000: (move sitea sitec) [2.00000000]
+49.26100000: (move sitec sited) [2.00000000]
+51.27100000: (collect-soft rock4 sited bay1) [2.00000000]
+53.28100000: (move sited sitee) [2.00000000]
+55.29100000: (move sitee sitec) [2.00000000]
+57.30100000: (move sitec sitea) [2.00000000]
+59.31100000: (move sitea base) [2.00000000]
+61.32100000: (deposit rock4 bay1 base) [1.00000000]
+62.33100000: (move base sitea) [2.00000000]
+64.34100000: (move sitea sitec) [2.00000000]
+66.35100000: (move sitec sitee) [2.00000000]
+68.36100000: (move sitee sitef) [2.00000000]
+70.37100000: (collect-hard rock5 sitef bay1) [3.00000000]
+73.38100000: (move sitef sitee) [2.00000000]
+75.39100000: (move sitee sitec) [2.00000000]
+77.40100000: (move sitec sitea) [2.00000000]
+79.41100000: (move sitea base) [2.00000000]
+81.42100000: (deposit rock5 bay1 base) [1.00000000]
+82.43100000: (move base sitea) [2.00000000]
+84.44100000: (move sitea sitec) [2.00000000]
+86.45100000: (move sitec sitee) [2.00000000]
+88.46100000: (collect-soft rock6 sitee bay1) [2.00000000]
+90.47100000: (move sitee sitec) [2.00000000]
+92.48100000: (move sitec sitea) [2.00000000]
+94.49100000: (move sitea base) [2.00000000]
+96.50100000: (deposit rock6 bay1 base) [1.00000000]
+97.51100000: (move base sitea) [2.00000000]
+99.52100000: (move sitea sitec) [2.00000000]
+101.53100000: (move sitec sitee) [2.00000000]
+103.54100000: (move sitee sitef) [2.00000000]
+105.55100000: (collect-hard rock7 sitef bay1) [3.00000000]
+108.56100000: (move sitef sitee) [2.00000000]
+110.57100000: (move sitee sitec) [2.00000000]
+112.58100000: (move sitec sitea) [2.00000000]
+114.59100000: (move sitea base) [2.00000000]
+116.60100000: (deposit rock7 bay1 base) [1.00000000]

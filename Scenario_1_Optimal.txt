@@ -1,0 +1,95 @@
+number of literals: 57
+constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+[01;34mno analytic limits found, not considering limit effects of goal-only operators[00m
+all the ground actions in this problem are compression-safe
+initial heuristic = 17.000, admissible cost estimate 0.000
+b (16.000 | 6.002)b (15.000 | 7.003)b (14.000 | 9.004)b (13.000 | 14.006)b (12.000 | 16.007)b (11.000 | 21.011)b (10.000 | 27.014)b (9.000 | 33.016)b (8.000 | 34.018)b (7.000 | 45.022)b (6.000 | 46.023)b (5.000 | 59.029)b (4.000 | 61.030)b (3.000 | 63.031)b (1.000 | 65.032)(g)
+; no metric specified - using makespan
+
+; plan found with metric 66.034
+; states evaluated so far: 82
+; states pruned based on pre-heuristic cost lower bound: 0
+; time 1.19
+0.000: (move base siteb)  [2.000]
+2.001: (collect-soft rock2 siteb bay1)  [2.000]
+4.002: (move siteb base)  [2.000]
+6.003: (deposit rock2 bay1 base)  [1.000]
+7.004: (move base sitea)  [2.000]
+9.005: (collect-soft rock1 sitea bay1)  [2.000]
+11.006: (move sitea base)  [2.000]
+13.007: (deposit rock1 bay1 base)  [1.000]
+14.008: (move base sitea)  [2.000]
+16.009: (move sitea sitec)  [2.000]
+18.010: (move sitec sitee)  [2.000]
+20.011: (pick-drill drill1 sitee)  [1.000]
+21.012: (move sitee sited)  [2.000]
+23.013: (collect-soft rock4 sited bay1)  [2.000]
+25.014: (move sited sitee)  [2.000]
+27.015: (move sitee sitec)  [2.000]
+29.016: (move sitec sitea)  [2.000]
+31.017: (move sitea base)  [2.000]
+33.018: (deposit rock4 bay1 base)  [1.000]
+34.019: (move base sitea)  [2.000]
+36.020: (move sitea sitec)  [2.000]
+38.021: (collect-hard rock3 sitec bay1)  [3.000]
+41.022: (move sitec sitea)  [2.000]
+43.023: (move sitea base)  [2.000]
+45.024: (deposit rock3 bay1 base)  [1.000]
+46.025: (move base sitea)  [2.000]
+48.026: (move sitea sitec)  [2.000]
+50.027: (move sitec sitee)  [2.000]
+52.028: (move sitee sitef)  [2.000]
+54.029: (collect-hard rock5 sitef bay1)  [3.000]
+57.030: (move sitef sitee)  [2.000]
+59.031: (move sitee sitec)  [2.000]
+61.032: (move sitec sitea)  [2.000]
+63.033: (move sitea base)  [2.000]
+65.034: (deposit rock5 bay1 base)  [1.000]
+
+ * all goal deadlines now no later than 66.034
+
+resorting to best-first search
+running wa* with w = 5.000, not restarting with goal states
+b (16.000 | 6.002)b (15.000 | 7.003)b (14.000 | 11.004)b (13.000 | 14.006)b (12.000 | 16.007)b (11.000 | 21.011)b (10.000 | 28.014)b (9.000 | 30.015)b (8.000 | 35.017)b (7.000 | 37.018)b (6.000 | 44.021)b (5.000 | 48.023)b (4.000 | 49.024)b (3.000 | 57.028)b (1.000 | 59.029)(g)
+; no metric specified - using makespan
+
+; plan found with metric 60.031
+; states evaluated so far: 254
+; states pruned based on pre-heuristic cost lower bound: 0
+; time 1.29
+0.000: (move base sitea)  [2.000]
+2.001: (collect-soft rock1 sitea bay1)  [2.000]
+4.002: (move sitea base)  [2.000]
+6.003: (deposit rock1 bay1 base)  [1.000]
+7.004: (move base siteb)  [2.000]
+9.005: (collect-soft rock2 siteb bay1)  [2.000]
+11.006: (move siteb base)  [2.000]
+13.007: (deposit rock2 bay1 base)  [1.000]
+14.008: (move base sitea)  [2.000]
+16.009: (move sitea sitec)  [2.000]
+18.010: (move sitec sitee)  [2.000]
+20.011: (pick-drill drill1 sitee)  [1.000]
+21.012: (move sitee sitef)  [2.000]
+23.013: (collect-hard rock5 sitef bay1)  [3.000]
+26.014: (move sitef sitee)  [2.000]
+28.015: (move sitee sitec)  [2.000]
+30.016: (move sitec sitea)  [2.000]
+32.017: (move sitea base)  [2.000]
+34.018: (deposit rock5 bay1 base)  [1.000]
+35.019: (move base sitea)  [2.000]
+37.020: (move sitea sitec)  [2.000]
+39.021: (collect-hard rock3 sitec bay1)  [3.000]
+42.022: (move sitec sited)  [2.000]
+44.023: (move sited siteb)  [2.000]
+46.024: (move siteb base)  [2.000]
+48.025: (deposit rock3 bay1 base)  [1.000]
+49.026: (move base siteb)  [2.000]
+51.027: (move siteb sited)  [2.000]
+53.028: (collect-soft rock4 sited bay1)  [2.000]
+55.029: (move sited siteb)  [2.000]
+57.030: (move siteb base)  [2.000]
+59.031: (deposit rock4 bay1 base)  [1.000]
+
+ * all goal deadlines now no later than 60.031
+b (0.000 | 60.030)
